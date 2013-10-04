@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="profile">
+        <fieldset name="profile" addfieldpath="/administrator/components/com_constantcontact/model/fields" label="PLG_USER_PROFILE_SLIDER_LABEL">
+           <field name="lists" type="Mailinglist" default="1" label="COM_CONSTANTCONTACT_TITLE_CONTACT_LIST" description="" ></field>
+        </fieldset>
+    </fields>
+</form>

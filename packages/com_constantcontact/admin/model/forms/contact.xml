@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+ <fields>
+    <fieldset name="basic" addfieldpath="/administrator/components/com_constantcontact/model/fields">
+	    <field name="id" type="hidden" default="0" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" />
+        <field name="status" type="list" default="ACTIVE" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_STATUS_LABEL" description="">
+            <option value="ACTIVE">ACTIVE_MEMBER_TEXT</option>
+            <option value="UNCONFIRMED">NOT_CONFIRMED_MEMBER_TEXT</option>
+            <option value="OPTOUT">MEMBER_UNSUBSCRIBED_TEXT</option>
+            <option value="REMOVED">REMOVED_TEXT</option>
+            <option value="NON_SUBSCRIBER">NON_SUBSCRIBER_TEXT</option>
+            <option value="VISITOR">VISITOR_TEXT</option>
+        </field>
+        <field name="prefix_name" maxlenght="4" size="4" type="hidden" default="Sr" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_PREFIX_NAME_LABEL" description=""></field>
+        <field name="first_name" required="true" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_FIRST_NAME_LABEL" description=""></field>
+        <field name="middle_name" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_MIDDLE_NAME_LABEL" description=""></field>
+        <field name="last_name" required="true" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_LAST_NAME_LABEL" description=""></field>
+        <field name="job_title" maxlenght="50" size="50" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_JOB_TITLE_LABEL"></field>
+        <field name="company_name" maxlenght="50" size="50" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_COMPANY_NAME_LABEL"></field>
+        <field name="home_phone" maxlenght="50" size="50" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_HOME_PHONE_LABEL"></field>
+        <field name="work_phone" maxlenght="50" size="50" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_WORK_PHONE_LABEL"></field>
+        <field name="cell_phone" maxlenght="50" size="50" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_CELL_PHONE_LABEL"></field>
+        <field name="source_details" type="hidden"></field>
+        <field name="confirmed" default="false" type="list" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_CONFIRMED_LABEL">
+            <option value="true">JYES</option>
+            <option value="false">JNO</option>
+        </field>
+        <field name="source" type="text" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_SOURCE_LABEL" description=""></field>
+        <field name="fax" type="text" label="COM_CONSTANTCONTACT_FORM_CONTACT_FIELD_FAX_LABEL" description=""></field>
+		<field name="lists" type="Contactlist" label="COM_CONSTANTCONTACT_TITLE_CONTACT_LIST" description=""></field>
+   </fieldset>
+ </fields>
+</form> 

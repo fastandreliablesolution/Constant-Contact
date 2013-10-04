@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fieldset name="addresses">
+    <field name="id" type="hidden" default="0" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" />
+    <field name="line1" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_LINE1_LABEL" description=""></field>
+    <field name="line2" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_LINE2_LABEL" description=""></field>
+    <field name="line3" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_LINE3_LABEL" description=""></field>
+    <field name="city" maxlenght="50" size="50" type="text" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_CITY_LABEL" description=""></field>
+    <field name="address_type" type="list" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_ADDRESS_TYPE_LABEL" description="">
+        <option value="PERSONAL">PERSONAL_TEXT</option>
+        <option value="BUSINESS">BUSINESS_TEXT</option>
+        <option value="UNKNOWN">UNKNOWN_TEXT</option>
+    </field>
+	<field name="country_code" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_COUNTRY_CODE_LABEL" type="sql" query="select country_code, country_name FROM #__constantcontact_country" key_field="country_code" value_field="country_name">
+         <option>Select Country</option>
+     </field>
+    <field name="state_code" maxlenght="2" size="2" default="MI" type="hidden" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_STATE_CODE_LABEL" description=""></field>
+    <field name="postal_code" maxlenght="25" size="25" type="text" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_POSTAL_CODE_LABEL" description=""></field>
+    <field name="sub_postal_code" maxlenght="25" size="25" type="text" label="COM_CONSTANTCONTACT_FORM_ADDRESS_FIELD_SUB_POSTAL_CODE_LABEL" description=""></field>
+</fieldset>
+</form>

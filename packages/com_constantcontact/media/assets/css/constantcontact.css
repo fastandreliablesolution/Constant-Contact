@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+table, table tr, table td{
+	border:0 none !important;
+}
+table td{
+	padding: 5px;
+}

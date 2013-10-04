@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+    <name>Package - Constant Contact</name>
+    <author>cloudaccess.net</author>
+    <creationDate>August 2013</creationDate>
+    <packagename>constantcontact</packagename>
+    <version>1.1</version>
+    <url>http://www.cloudaccess.net/</url>
+    <packager>Cloudaccess Team</packager>
+    <packagerurl>http://www.cloudaccess.net/</packagerurl>
+    <description></description>
+    <update>http://www.cloudaccess.net</update>
+    <files folder="packages">
+        <file type="component" id="com_constantcontact">com_constantcontact</file>
+        <file type="plugin" group="user" id="constantcontact">plg_user_constantcontact</file>
+        <file type="plugin" group="content" id="constantcontact">plg_content_constantcontact</file>
+        <file type="module" client="site" id="mod_constantcontact">mod_constantcontact</file>
+    </files>
+    <updateservers>
+        <server type="collection" priority="1" name="Cloud Access">http://extensions.cloudaccess.net/download/list.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="user" method="upgrade">
+	<name>plg_user_constantcontact</name>
+	<author>Cloudaccess.net</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>constantcontact@cloudaccess.net</authorEmail>
+	<authorUrl>www.cloudaccess.net</authorUrl>
+	<version>1.1</version>
+	<description>PLG_USER_CONSTANTCONTACT_DESCRIPTION</description>
+    <scriptfile>script.php</scriptfile>
+	<files>
+	  <filename plugin="constantcontact">constantcontact.php</filename>
+	  <folder>forms</folder>
+	</files>
+	 <languages>
+          <language tag="en-GB">language/en-GB/en-GB.plg_user_constantcontact.sys.ini</language>
+     </languages>
+	 <config>
+        <fields name="params">
+           <fieldset name="basic">
+              <field name="showlist" type="list" default="1" label="COM_CONSTANTCONTACT_SHOW_MAILINGLIST" description="COM_CONSTANTCONTACT_SHOW_MAILINGLIST_DESC" >
+			     <option value="1">JYES</option>
+				 <option value="0">JNO</option>
+			 </field>
+           </fieldset>
+       </fields>
+    </config>
+</extension>

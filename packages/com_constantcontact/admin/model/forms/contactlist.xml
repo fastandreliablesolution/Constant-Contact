@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+ <fields>
+    <fieldset name="basic" addfieldpath="/administrator/components/com_constantcontact/model/fields">
+	    <field name="id" type="hidden" default="0" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" />
+		<field name="contact_count" readonly="true" class="readonly" size="4" type="text" default="0" label="COM_CONSTANTCONTACT_FORM_CONTACTLIST_FIELD_CONTACT_COUNT_LABEL" description="" />
+        <field name="status" type="list" default="ACTIVE" label="COM_CONSTANTCONTACT_FORM_CONTACTLIST_FIELD_STATUS_LABEL" description="">
+            <option value="ACTIVE">ACTIVE_TEXT</option>
+            <option value="HIDDEN">HIDDEN_TEXT</option>
+        </field>
+        <field name="name" size="20" type="text" default="" label="COM_CONSTANTCONTACT_FORM_CONTACTLIST_FIELD_NAME_LABEL" description="" />
+		<field name="joomlacategory" type="sql" query="select title FROM #__categories WHERE parent_id > 0 AND published = 1 AND extension='com_content'" key="value" value="text" key_field="title" value_field="title" label="COM_CONSTANTCONTACT_FORM_CONTACTLIST_FIELD_CATEGORY_LABEL">
+         <option>select category</option>
+         </field>
+   </fieldset>
+ </fields>
+</form> 

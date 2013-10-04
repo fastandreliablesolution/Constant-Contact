@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="module" client="site" method="upgrade">
+	<name>Constantcontact Module</name>
+	<author>Cloudaccess.net</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>constantcontact@cloudaccess.net</authorEmail>
+	<authorUrl>www.cloudaccess.net</authorUrl>
+	<version>1.1</version>
+	<description>MOD_CONSTANTCONTACT_DESCRIPTION</description>
+	 <files>
+	   <filename module="mod_constantcontact">mod_constantcontact.php</filename>
+	   <filename>tmpl/default.php</filename>
+	   <filename>tmpl/index.html</filename>
+	 </files>
+	 <languages>
+	   <language tag="en-GB">language/en-GB/en-GB.mod_constantcontact.ini</language>
+     </languages>
+	 <config>
+		<form>
+          <fields name="params">
+		     <fieldset name="basic" label="MOD_CONSTANTCONTACT_MODULE_PARAMS" addfieldpath="/administrator/components/com_content/models/fields">
+			  <fieldset name="basic" label="MOD_CONSTANTCONTACT_MODULE_PARAMS" addfieldpath="/administrator/components/com_constantcontact/model/fields">
+			   <field name="lists" default="1" type="Mailinglist" label="MOD_CONSTANTCONTACT_TITLE_MAILING_LIST" description="MOD_CONSTANTCONTACT_TITLE_MAILING_LIST_DESC" />
+			   <field name="createJoomlaUser" type="list" label="MOD_CONSTANTCONTACT_CREATE_JOOMLA_USER" description="MOD_CONSTANTCONTACT_CREATE_JOOMLA_USER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			   </field>
+			   <field name="showNameField" type="list" label="MOD_CONSTANTCONTACT_SHOW_NAME_FIELD" description="MOD_CONSTANTCONTACT_SHOW_NAME_FIELD_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			  </field>
+			  <field name="showMailingList" type="list" label="MOD_CONSTANTCONTACT_SHOW_MAILING_FIELD"	description="MOD_CONSTANTCONTACT_SHOW_MAILING_FIELD_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			  </field>
+			  <field name="subscribeRedirectLink" type="text" size="50" default="" label="MOD_CONSTANTCONTACT_REDIRECT_LINK" description="MOD_CONSTANTCONTACT_REDIRECT_LINK_DESC" />
+		      <field name="unsubscribeRedirectLink" type="text" size="50" default="" label="MOD_CONSTANTCONTACT_REDIRECT_LINK_UNSUB" description="MOD_CONSTANTCONTACT_REDIRECT_LINK_UNSUB_DESC" />
+			  <field name="buttontext" type="text" size="50" default="Subscribe By Email" label="MOD_CONSTANTCONTACT_BUTTON_TEXT" description="MOD_CONSTANTCONTACT_BUTTON_TEXT_DESC" />
+			  <field name="showTermsConditions" type="radio" default="0" label="MOD_CONSTANTCONTACT_TERMS_AND_COND_TEXT" description="MOD_CONSTANTCONTACT_TERMS_AND_COND_TEXT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			 </field>
+		     <field name="showTermsasPopup" type="radio" default="1" label="MOD_CONSTANTCONTACT_ARTICLE_POPUP_TEXT" description="MOD_CONSTANTCONTACT_ARTICLE_POPUP_TEXT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+		     </field>		
+             <field name="termsContent" type="modal_article" label="MOD_CONSTANTCONTACT_ARTICLE_ID_TEXT" description="MOD_CONSTANTCONTACT_ARTICLE_ID_TEXT_DESC" />
+			</fieldset>
+			</fieldset>
+		    <fieldset name="advanced">
+                <field  name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"  description="MOD_LANGUAGES_FIELD_MODULE_LAYOUT_DESC" />
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="load_jquery" type="list" label="MOD_CONSTANTCONTACT_LOAD_JQUERY_LABEL" default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="itemid">
+                    <option value="itemid"></option>
+                </field>
+            </fieldset>
+		 </fields>	
+	   </form>
+	 </config>
+</extension>

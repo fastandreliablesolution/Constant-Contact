@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="email_addresses">
+        <field name="id" type="hidden" default="0" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" />
+	    <field name="email_address" required="true" type="text" label="COM_CONSTANTCONTACT_FORM_EMAIL_ADDRESS_FIELD_EMAIL_ADDRESS_LABEL"></field>
+        <field name="status" type="list" default="ACTIVE" label="COM_CONSTANTCONTACT_FORM_EMAIL_ADDRESS_FIELD_STATUS_LABEL" description="">
+            <option value="ACTIVE">ACTIVE_MEMBER_TEXT</option>
+            <option value="UNCONFIRMED">NOT_CONFIRMED_MEMBER_TEXT</option>
+            <option value="OPTOUT">MEMBER_UNSUBSCRIBED_TEXT</option>
+            <option value="REMOVED">REMOVED_TEXT</option>
+            <option value="NON_SUBSCRIBER">NON_SUBSCRIBER_TEXT</option>
+            <option value="VISITOR">VISITOR_TEXT</option>
+        </field>
+        <field name="confirm_status" type="list" label="COM_CONSTANTCONTACT_FORM_EMAIL_ADDRESS_FIELD_CONFIRM_STATUS_LABEL">
+            <option value="CONFIRMED">CONFIRMED_TEXT</option>
+            <option value="NO_CONFIRMATION_REQUIRED">NO_CONFIRMATION_REQUIRED_TEXT</option>
+            <option value="UNCONFIRMED">UNCONFIRMED_TEXT</option>
+        </field>
+        <field name="opt_in_source" type="list" label="COM_CONSTANTCONTACT_FORM_EMAIL_ADDRESS_FIELD_OPT_IN_SOURCE_LABEL">
+           <option value="ACTION_BY_OWNER">ACTION_BY_OWNER_TEXT</option>
+		   <option value="ACTION_BY_VISITOR">ACTION_BY_VISITOR_TEXT</option>
+        </field>
+        <field name="opt_out_source" type="list" label="COM_CONSTANTCONTACT_FORM_EMAIL_ADDRESS_FIELD_OPT_OUT_SOURCE_LABEL">
+           <option value="ACTION_BY_OWNER">ACTION_BY_OWNER_TEXT</option>
+		   <option value="ACTION_BY_VISITOR">ACTION_BY_VISITOR_TEXT</option>
+        </field>
+     </fieldset>
+</form>
